@@ -1,0 +1,60 @@
+{
+  "groups": [
+    {
+      "name": "wu.door",
+      "type": "com.tabwu.door.property.DoorProperty",
+      "sourceType": "com.tabwu.door.property.DoorProperty"
+    },
+    {
+      "name": "wu.idempotent",
+      "type": "com.tabwu.door.property.IdempotentProperty",
+      "sourceType": "com.tabwu.door.property.IdempotentProperty"
+    },
+    {
+      "name": "wu.limiter",
+      "type": "com.tabwu.door.property.RateLimitterProperty",
+      "sourceType": "com.tabwu.door.property.RateLimitterProperty"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wu.door.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.tabwu.door.property.DoorProperty"
+    },
+    {
+      "name": "wu.door.host",
+      "type": "java.lang.String",
+      "sourceType": "com.tabwu.door.property.DoorProperty"
+    },
+    {
+      "name": "wu.idempotent.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.tabwu.door.property.IdempotentProperty",
+      "defaultValue": false
+    },
+    {
+      "name": "wu.idempotent.expiration",
+      "type": "java.lang.Integer",
+      "sourceType": "com.tabwu.door.property.IdempotentProperty",
+      "defaultValue": 0
+    },
+    {
+      "name": "wu.idempotent.key",
+      "type": "java.lang.String",
+      "sourceType": "com.tabwu.door.property.IdempotentProperty"
+    },
+    {
+      "name": "wu.limiter.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.tabwu.door.property.RateLimitterProperty"
+    },
+    {
+      "name": "wu.limiter.key",
+      "type": "java.lang.String",
+      "sourceType": "com.tabwu.door.property.RateLimitterProperty",
+      "defaultValue": "ratelimiter"
+    }
+  ],
+  "hints": []
+}

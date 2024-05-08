@@ -17,7 +17,6 @@ import java.util.ArrayList;
  * @DATE: 2024/4/19 15:07
  * @DESCRIPTION:
  */
-@Component
 public class IdempotentService {
     private String key;
     private int expiration;

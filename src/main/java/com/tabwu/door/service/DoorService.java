@@ -11,7 +11,6 @@ import java.util.Set;
  * @DATE: 2024/4/16 15:04
  * @DESCRIPTION:
  */
-@Component
 public class DoorService {
 
     private String hosts;

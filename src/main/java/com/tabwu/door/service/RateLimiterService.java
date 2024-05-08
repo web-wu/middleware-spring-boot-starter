@@ -16,7 +16,6 @@ import java.util.ArrayList;
  * @DATE: 2024/4/25 15:15
  * @DESCRIPTION:
  */
-@Component
 public class RateLimiterService {
 
     private final String sufixKey;

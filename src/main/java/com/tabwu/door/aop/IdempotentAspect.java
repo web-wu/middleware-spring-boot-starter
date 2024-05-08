@@ -9,6 +9,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
@@ -22,6 +23,7 @@ import java.util.HashMap;
  */
 @Aspect
 @Component
+@ConditionalOnBean(value = {IdempotentService.class})
 public class IdempotentAspect {
 
     @Autowired

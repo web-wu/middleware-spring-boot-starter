@@ -1,6 +1,5 @@
 package com.tabwu.door.service;
 
-import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -21,7 +20,6 @@ public class DoorService {
         this.hosts = hosts;
         for (String host : hosts.split(",")) {
             JOST_SET.add(host.trim());
-            System.out.println("加载配置host---" + host.trim());
         }
     }
 

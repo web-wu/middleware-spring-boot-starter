@@ -1,12 +1,13 @@
 package com.tabwu.door.config;
 
 import com.tabwu.door.property.DoorProperty;
+import com.tabwu.door.property.EncryptProperty;
 import com.tabwu.door.property.IdempotentProperty;
 import com.tabwu.door.property.RateLimitterProperty;
 import com.tabwu.door.service.DoorService;
+import com.tabwu.door.service.EncryptService;
 import com.tabwu.door.service.IdempotentService;
 import com.tabwu.door.service.RateLimiterService;
-import org.springframework.boot.autoconfigure.cache.CacheProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -24,7 +25,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  * @DESCRIPTION:
  */
 @Configuration
-@EnableConfigurationProperties({DoorProperty.class, IdempotentProperty.class, RateLimitterProperty.class})
+@EnableConfigurationProperties({DoorProperty.class, IdempotentProperty.class, RateLimitterProperty.class, EncryptProperty.class})
 // 扫描aop切面类，加载到spring容器中
 @ComponentScan(basePackages = "com.tabwu.door.aop")
 public class DoorAutoConfiguration {
@@ -48,6 +49,13 @@ public class DoorAutoConfiguration {
     @ConditionalOnProperty(prefix = "wu.limiter", value = "enabled", havingValue = "true")
     public RateLimiterService rateLimiterService(RateLimitterProperty rateLimitterProperty) {
         return new RateLimiterService(rateLimitterProperty.getKey());
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    @ConditionalOnProperty(prefix = "wu.encrypt", value = "enabled", havingValue = "true")
+    public EncryptService encryptService() {
+        return new EncryptService();
     }
 
 }

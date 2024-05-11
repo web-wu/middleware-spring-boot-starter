@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08195283-5e2a-45a9-866f-24ba64a31fbd" name="Default Changelist" comment="" />
+    <list default="true" id="08195283-5e2a-45a9-866f-24ba64a31fbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/annotation/EncryptField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/annotation/EncryptMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/aop/EncryptAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/constant/EncryptType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/property/EncryptProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/service/EncryptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tabwu/door/aop/DoorAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/aop/DoorAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tabwu/door/config/DoorAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/config/DoorAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tabwu/door/service/DoorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tabwu/door/service/DoorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/annotation/Door.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/annotation/Idempotent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/annotation/RateLimiter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/aop/DoorAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/aop/IdempotentAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/aop/RateLimiterAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/config/DoorAutoConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/constant/LimitType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/property/DoorProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/property/IdempotentProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/property/RateLimitterProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/service/DoorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/service/IdempotentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tabwu/door/service/RateLimiterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/door-spring-boot-starter-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +49,8 @@
       <list>
         <option value="Kotlin File" />
         <option value="AnnotationType" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -49,7 +83,25 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JAVA_E\Project_study\door-spring-boot-starter" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,6 +120,10 @@
       <workItem from="1714276079712" duration="3470000" />
       <workItem from="1714455178091" duration="9842000" />
       <workItem from="1714963892666" duration="1219000" />
+      <workItem from="1715132770133" duration="5592000" />
+      <workItem from="1715241518442" duration="2499000" />
+      <workItem from="1715331263309" duration="2287000" />
+      <workItem from="1715389294900" duration="12866000" />
     </task>
     <servers />
   </component>
@@ -79,7 +135,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="orgin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
